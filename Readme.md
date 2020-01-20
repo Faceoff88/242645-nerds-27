@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Денис Фейзов](https://up.htmlacademy.ru/htmlcss/27/user/242645).
-* Наставник: `Неизвестно`.
+- Студент: [Денис Фейзов](https://up.htmlacademy.ru/htmlcss/27/user/242645).
+- Наставник: [Андрей Гинтер](https://htmlacademy.ru/profile/id781369).
 
 ---
 
