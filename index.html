@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
@@ -115,7 +114,7 @@
           </ul>
         </div>
         <div>
-          <img src="img/nerds-illustration.png" width="360" height="208" alt="логотип с иллюстрацией">
+          <img src="img/nerds-picture.png" width="360" height="208" alt="логотип с иллюстрацией">
           <p>C 2004 года любим точность во всем:</p>
           <ul>
             <li>
@@ -142,10 +141,10 @@
       <section>
         <h2>Партнеры</h2>
         <ul>
-          <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" alt="логотип HTML Academy"></a></li>
-          <li><a href="#"><img src="img/bsrbershop.pnh" alt="логотип Barbershop"></a></li>
-          <li><a href="#"><img src="img/pink.png" alt="логотип Pink"></a></li>
-          <li><a href="#"><img src="img/mishka.png" alt="логотип Mishka"></a></li>
+          <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacdemy-logo.png" alt="логотип HTML Academy"></a></li>
+          <li><a href="#"><img src="img/borodinsli-logo.png" alt="логотип Barbershop"></a></li>
+          <li><a href="#"><img src="img/pink-logo.png" alt="логотип Pink"></a></li>
+          <li><a href="#"><img src="img/mishka-logo.png" alt="логотип Mishka"></a></li>
         </ul>
       </section>
       <section>
@@ -161,7 +160,7 @@
           </p>
           <button type="button">Напишите нам</button>
         </div>
-        <!-- Здесь будет карта города с маркером -->
+        <div id="map" style="width: 1440px; height: 416px;"></div>
       </section>
     </main>
     <footer>
@@ -172,8 +171,10 @@
         </ul>
       <p>
         Давайте дружить, это выгодно!
-        <span>Скилка 10% для друзей из социальных сетей.</span>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
       </p>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=6a36dbd7-5c91-4a91-bf6f-957ee9877949" type="text/javascript"></script>
+    <script src="js/yamap-custom.js"></script>
   </body>
 </html>
