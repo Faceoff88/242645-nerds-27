@@ -24,76 +24,80 @@
       <section>
         <section>
           <h2>Фильтр шаблонов</h2>
-          <div class="filter-range">
-            <h3>Стоимость:</h3>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="filter-range">
+              <h3>Стоимость:</h3>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
               </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
-            </div>
-            <div class="price-controls">
-              <label for="min-price">От <input type="text" name="min-price" value="0"></label>
-              <label for="max-price">До <input type="text" name="max-price" value="15 000"></label>
-            </div>
-          </div>
-          <div class="filter-grid">
-            <h3>Сетка:</h3>
-            <ul>
-              <li>
-                <input type="radio" name="filter-grid-group" id="adaptive" value="adaptive" checked>
-                <label for="adaptive">Адаптивная</label>
-              </li>
-              <li>
-                <input type="radio" name="filter-grid-group" id="fixed" value="fixed">
-                <label for="fixed">Фиксированная</label>
-              </li>
-              <li>
-                <input type="radio" name="filter-grid-group" id="flexed" value="flexed">
-                <label for="flexed">Резиновая</label>
-              </li>
-            </ul>
-          </div>
-          <div class="filter-features">
-            <h3>Особенности:</h3>
-            <ul>
-              <li>
-                <input type="checkbox" name="filter-features-group" id="slider" value="slider" checked>
-                <label for="slider">Слайдер</label>
-              </li>
-              <li>
-                <input type="checkbox" name="filter-features-group" id="advantage-block" value="advantage-block">
-                <label for="advantage-block">Блок преимуществ</label>
-              </li>
-              <li>
-                <input type="checkbox" name="filter-features-group" id="news" value="news" checked>
-                <label for="news">Новости</label>
-              </li>
-              <li>
-                <input type="checkbox" name="filter-features-group" id="gallery" value="gallery">
-                <label for="gallery">Галерея</label>
-              </li>
-              <li>
-                <input type="checkbox" name="filter-features-group" id="cart" value="cart">
-                <label for="cart">Корзина</label>
-              </li>
-            </ul>
-          </div>
-          <button type="submit">Показать</button>
+              <div class="price-controls">
+                <label for="min-price">От <input type="text" name="min-price" value="0"></label>
+                <label for="max-price">До <input type="text" name="max-price" value="15 000"></label>
+              </div>
+            </fieldset>
+            <fieldset class="filter-grid">
+              <h3>Сетка:</h3>
+              <ul>
+                <li>
+                  <input type="radio" name="filter-grid-group" id="adaptive" value="adaptive" checked>
+                  <label for="adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="filter-grid-group" id="fixed" value="fixed">
+                  <label for="fixed">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="filter-grid-group" id="flexed" value="flexed">
+                  <label for="flexed">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-features">
+              <h3>Особенности:</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" name="filter-features-group" id="slider" value="slider" checked>
+                  <label for="slider">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter-features-group" id="advantage-block" value="advantage-block">
+                  <label for="advantage-block">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter-features-group" id="news" value="news" checked>
+                  <label for="news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter-features-group" id="gallery" value="gallery">
+                  <label for="gallery">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter-features-group" id="cart" value="cart">
+                  <label for="cart">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
         </section>
         <section>
           <h2>Список готовых шаблонов</h2>
           <h3>Сортировать:</h3>
-          <ul>
-            <li><button type="button">По цене</button></li>
-            <li><button type="button">По типу</button></li>
-            <li><button type="button">По названию</button></li>
-          </ul>
-          <ul>
-            <li><button type="button">По убыванию</button></li> <!-- Иконка dir down -->
-            <li><button type="button">По возрастанию</button></li> <!-- Иконка dir up -->
-          </ul>
+          <div>
+            <ul>
+              <li><button type="button">По цене</button></li>
+              <li><button type="button">По типу</button></li>
+              <li><button type="button">По названию</button></li>
+            </ul>
+            <ul>
+              <li><button type="button">По убыванию</button></li> <!-- Иконка dir down -->
+              <li><button type="button">По возрастанию</button></li> <!-- Иконка dir up -->
+            </ul>
+          </div>
           <ul>
             <li>
               <div>
@@ -201,18 +205,20 @@
     <section>
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="name">Ваше имя:</label>
-          <input type="text" name="name" value="" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="email">Ваш e-mail:</label>
-          <input type="email" name="email" value="" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="text">Текст письма:</label>
-          <textarea name="text" required rows="5" placeholder="В свободной форме"></textarea>
-        </p>
+        <ul>
+          <li>
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" value="" placeholder="Имя Фамилия">
+          </li>
+          <li>
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" name="email" value="" placeholder="email@example.com">
+          </li>
+          <li>
+            <label for="text">Текст письма:</label>
+            <textarea name="text" required rows="5" placeholder="В свободной форме"></textarea>
+          </li>
+        </ul>
         <button type="submit">Отправить</button>
         <button type="button">Закрыть</button>
       </form>
