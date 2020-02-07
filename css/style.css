@@ -79,7 +79,7 @@ a {
   position: absolute;
   left: -26px;
   top: 50%;
-  background-image: url(/img/basket-icon.svg);
+  background-image: url(../img/basket-icon.svg);
   transform: translateY(-50%);
 }
 
@@ -125,19 +125,19 @@ a {
 }
 
 .slide-one {
-  background-image: url(./img/slide1.png);
+  background-image: url(../img/slide1.png);
   background-repeat: no-repeat;
   background-position: right top;
 }
 
 .slide-two {
-  background-image: url(./img/slide2.png);
+  background-image: url(../img/slide2.png);
   background-repeat: no-repeat;
   background-position: right top;
 }
 
 .slide-three {
-  background-image: url(./img/slide3.png);
+  background-image: url(../img/slide3.png);
   background-repeat: no-repeat;
   background-position: right top;
 }
@@ -438,7 +438,7 @@ a {
 }
 
 .range-toggle {
-  background-image: url(/img/filter-button.svg);
+  background-image: url(../img/filter-button.svg);
   background-repeat: no-repeat;
   width: 20px;
   height: 23px;
@@ -508,7 +508,7 @@ a {
 
 .filter-grid input[type="radio"]+label::before {
   content: '';
-  background-image: url(/img/radio-off.svg);
+  background-image: url(../img/radio-off.svg);
   background-position: center center;
   background-repeat: no-repeat;
   width: 25px;
@@ -521,7 +521,7 @@ a {
 }
 
 .filter-grid input[type="radio"]:checked+label::before {
-  background-image: url(/img/radio-on.svg);
+  background-image: url(../img/radio-on.svg);
 }
 
 .filter-features {
@@ -536,7 +536,7 @@ a {
 
 .filter-features input[type="checkbox"]+label::before {
   content: '';
-  background-image: url(/img/checkbox-off.svg);
+  background-image: url(../img/checkbox-off.svg);
   background-position: center center;
   background-repeat: no-repeat;
   width: 25px;
@@ -549,7 +549,7 @@ a {
 }
 
 .filter-features input[type="checkbox"]:checked+label::before {
-  background-image: url(/img/checkbox-on.svg);
+  background-image: url(../img/checkbox-on.svg);
   left: -33px;
 }
 
@@ -611,7 +611,7 @@ a {
 .dir-down {
   width: 11px;
   height: 10px;
-  background-image: url(/img/icon-down-dir.svg);
+  background-image: url(../img/icon-down-dir.svg);
   border: none;
   background-color: transparent;
   opacity: 0.5;
@@ -620,7 +620,7 @@ a {
 .dir-up {
   width: 11px;
   height: 10px;
-  background-image: url(/img/icon-up-dir.svg);
+  background-image: url(../img/icon-up-dir.svg);
   border: none;
   background-color: transparent;
   opacity: 0.5;
@@ -659,7 +659,7 @@ a {
   content: '';
   width: 360px;
   height: 40px;
-  background-image: url(/img/browser.svg);
+  background-image: url(../img/browser.svg);
   position: absolute;
   top: 0;
   left: 0;
