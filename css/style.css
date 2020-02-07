@@ -125,19 +125,19 @@ a {
 }
 
 .slide-one {
-  background-image: url(/img/slide1.png);
+  background-image: url(./img/slide1.png);
   background-repeat: no-repeat;
   background-position: right top;
 }
 
 .slide-two {
-  background-image: url(/img/slide2.png);
+  background-image: url(./img/slide2.png);
   background-repeat: no-repeat;
   background-position: right top;
 }
 
 .slide-three {
-  background-image: url(/img/slide3.png);
+  background-image: url(./img/slide3.png);
   background-repeat: no-repeat;
   background-position: right top;
 }
