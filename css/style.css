@@ -32,15 +32,37 @@ a {
 .button:active {
   background-color: #d7373b;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .green {
   background-color: #00ca74;
 }
 
+.green:hover,
+.green:focus {
+  background-color: #00bc6c;
+}
+
+.green:active {
+  background-color: #00aa62;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
 .yellow {
   background-color: #efc84a;
 }
+
+.yellow:hover,
+.yellow:focus {
+  background-color: #eab534;
+}
+
+.yellow:active {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #e5a722;
+}
+
 
 
 
@@ -142,6 +164,18 @@ a {
   background-position: right top;
 }
 
+.slider-item-title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+.slider-item-desc {
+  color: #283136;
+}
+
 
 /**SERVICES**/
 
@@ -151,14 +185,6 @@ a {
   list-style: none;
 }
 
-.slider-item-title {
-  font-size: 55px;
-  font-weight: 500;
-  line-height: 55px;
-  font-stretch: normal;
-  font-style: normal;
-}
-
 .service-item-title {
   font-size: 24px;
   line-height: 30px;
@@ -166,7 +192,7 @@ a {
   text-transform: uppercase;
 }
 
-.service-item-desc {
+.service-item p {
   color: #283136;
 }
 
@@ -210,21 +236,18 @@ a {
   font-size: 45px;
   font-weight: 700;
   line-height: 10px;
-  display: inline-block;
-  position: relative;
 }
 
 .percent {
-  display: inline-block;
   font-size: 24px;
-  position: absolute;
-  top: -5px;
+  vertical-align: 0.7em;
 }
 
 .illustration-item-desc {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 18px;
+  color: #283136;
 }
 
 
@@ -235,6 +258,18 @@ a {
   list-style: none;
 }
 
+.partner-item a {
+  opacity: 0.2;
+}
+
+.partner-item a:hover,
+.partner-item a:hover {
+  opacity: 1;
+}
+
+.partner-item a:active {
+  opacity: 0.1;
+}
 
 /**CONTACTS**/
 
@@ -290,7 +325,7 @@ a {
   align-items: center;
 }
 
-.footer-text {
+.footer-title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -298,7 +333,7 @@ a {
   flex-direction: column;
 }
 
-.footer-text span {
+.footer-text {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -334,7 +369,8 @@ a {
   padding-left: 15px;
 }
 
-.feedback-item input::placeholder .feedback-item textarea::placeholder {
+.feedback-item input::placeholder,
+.feedback-item textarea::placeholder {
   color: rgba(68, 68, 68, 0.5);
 }
 
@@ -355,6 +391,7 @@ a {
 .feedback-item input:focus,
 .feedback-item textarea:focus {
   border-color: #000000;
+  outline: black;
 }
 
 .feedback-item input:focus::placeholder,
@@ -460,6 +497,8 @@ a {
 .price-controls {
   margin-top: 13px;
   width: 261px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .price-controls label {
@@ -475,10 +514,6 @@ a {
   background-color: #eeeeee;
   border: none;
   border-radius: 3px;
-}
-
-.price-controls label[for="max-price"] {
-  float: right;
 }
 
 .price-controls input[name="min-price"] {
@@ -520,6 +555,10 @@ a {
   opacity: 0.4;
 }
 
+.filter-grid input[type="radio"]+label:hover::before {
+  opacity: 1;
+}
+
 .filter-grid input[type="radio"]:checked+label::before {
   background-image: url(../img/radio-on.svg);
 }
@@ -548,9 +587,18 @@ a {
   opacity: 0.4;
 }
 
+.filter-features input[type="checkbox"]+label:hover::before {
+  opacity: 1;
+}
+
 .filter-features input[type="checkbox"]:checked+label::before {
   background-image: url(../img/checkbox-on.svg);
   left: -33px;
+}
+
+.filter-features input[type="checkbox"]:disabled+label::before,
+.filter-grid input[type="radio"]:disabled+label::before {
+  opacity: 0.1;
 }
 
 .filter-button {
@@ -598,6 +646,10 @@ a {
   opacity: 0.6;
 }
 
+.sorting-list-one button:active {
+  opacity: 1;
+}
+
 .sorting-list-one .is-active-sort-button {
   opacity: 1;
 }
@@ -615,6 +667,7 @@ a {
   border: none;
   background-color: transparent;
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .dir-up {
@@ -624,9 +677,15 @@ a {
   border: none;
   background-color: transparent;
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .dir-is-active {
+  opacity: 1;
+}
+
+.dir-down:active,
+.dir-up:active {
   opacity: 1;
 }
 
