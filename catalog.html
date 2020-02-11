@@ -46,16 +46,16 @@
               <h3>Сетка:</h3>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-grid-group" id="adaptive" value="adaptive" checked>
-                  <label for="adaptive">Адаптивная</label>
+                  <input class="visually-hidden filter-input filter-input-radio" tabindex="0" type="radio" name="filter-grid-group" id="adaptive" value="adaptive" checked>
+                  <label for="adaptive" tabindex="0">Адаптивная</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-grid-group" id="fixed" value="fixed">
-                  <label for="fixed">Фиксированная</label>
+                  <label for="fixed" tabindex="0">Фиксированная</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-grid-group" id="flexed" value="flexed">
-                  <label for="flexed">Резиновая</label>
+                  <label for="flexed" tabindex="0">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
@@ -64,11 +64,11 @@
               <ul>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-features-group" id="slider" value="slider" checked>
-                  <label for="slider">Слайдер</label>
+                  <label for="slider" tabindex="0">Слайдер</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-features-group" id="advantage-block" value="advantage-block">
-                  <label for="advantage-block">Блок преимуществ</label>
+                  <label for="advantage-block" tabindex="0">Блок преимуществ</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-features-group" id="news" value="news" checked>
@@ -76,11 +76,11 @@
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-features-group" id="gallery" value="gallery">
-                  <label for="gallery">Галерея</label>
+                  <label for="gallery" tabindex="0">Галерея</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-features-group" id="cart" value="cart">
-                  <label for="cart">Корзина</label>
+                  <label for="cart" tabindex="0">Корзина</label>
                 </li>
               </ul>
             </fieldset>
@@ -104,7 +104,7 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <div class="item-text">
-                <h3 class="item-title">Sedona</h3>
+                <h3 class="item-title"><a href="#">Sedona</a></h3>
                 <p class="item-desc">
                   Информационный сайт<br>
                   для туристов
@@ -115,7 +115,7 @@
             </li>
             <li class="catalog-item">
               <div class="item-text">
-                <h3 class="item-title">Pink App</h3>
+                <h3 class="item-title"><a href="#">Pink App</a></h3>
                 <p class="item-desc">
                   Продуктовый лендинг<br>
                   приложения для iOS и Android</p>
@@ -125,7 +125,7 @@
             </li>
             <li class="catalog-item">
               <div class="item-text">
-                <h3 class="item-title">Barbershop</h3>
+                <h3 class="item-title"><a href="#">Barbershop</a></h3>
                 <p class="item-desc">
                   Сайт салона красоты.<br>
                   Для мужчин, да.
@@ -136,7 +136,7 @@
             </li>
             <li class="catalog-item">
               <div class="item-text">
-                <h3 class="item-title">Mishka</h3>
+                <h3 class="item-title"><a href="#">Mishka</a></h3>
                 <p class="item-desc">
                   Интернет-магазин<br>
                   вязанных игрушек
@@ -147,7 +147,7 @@
             </li>
             <li class="catalog-item">
               <div class="item-text">
-                <h3 class="item-title">A plus</h3>
+                <h3 class="item-title"><a href="#">A plus</a></h3>
                 <p class="item-desc">
                   Лендинг курсов повышения<br>
                   квалификации
@@ -158,7 +158,7 @@
             </li>
             <li class="catalog-item">
               <div class="item-text">
-                <h3 class="item-title">Кваст</h3>
+                <h3 class="item-title"><a href="#">Кваст</a></h3>
                 <p class="item-desc">
                   Промо-сайт производителя<br>
                   крафтового кваса
@@ -178,18 +178,20 @@
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts-text">
-          <h3 class="contacts-title">Nёrds design studio</h3>
-          <p class="contacts-address">
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p class="contacts-phone">
-            тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-          </p>
-          <button class="button contacts-button" type="button">Напишите нам</button>
+        <div class="contacts-text-wrapper">
+          <div class="contacts-text">
+            <h3 class="contacts-title">Nёrds design studio</h3>
+            <p class="contacts-address">
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p class="contacts-phone">
+              тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+            </p>
+            <button class="button contacts-button" type="button">Напишите нам</button>
+          </div>
         </div>
-        <div class="contacts-map" id="map" style="width: 1440px; height: 416px;"></div>
+        <div class="contacts-map" id="map" style="width: 100%; height: 416px;"></div>
       </section>
     </main>
     <footer class="main-footer">
@@ -198,8 +200,10 @@
         <li class="social-icon-item"><a href="#"><img src="img/fb-icon.svg" width="21" height="21" alt="Фейсбук"></a></li>
         <li class="social-icon-item"><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
       </ul>
-      <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
-      <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="main-footer-text">
+        <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
+        <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
   </footer>
   <section class="feedback-container">
     <h2 class="feedback-title">Напишите нам</h2>
@@ -219,10 +223,11 @@
         </li>
       </ul>
       <button class="button feedback-button" type="submit">Отправить</button>
-      <button class="feedback-close" type="button">Закрыть</button>
+      <button class="feedback-close" type="button"></button>
     </form>
   </section>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=6a36dbd7-5c91-4a91-bf6f-957ee9877949" type="text/javascript"></script>
     <script src="js/yamap-custom.js"></script>
+    <script src="js/common.js"></script>
   </body>
 </html>
