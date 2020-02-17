@@ -98,6 +98,8 @@ a {
   width: 438px;
   margin: 0;
   padding: 0;
+  padding-top: 6px;
+  padding-right: 22px;
 }
 
 .site-navigation a,
@@ -113,6 +115,8 @@ a {
   align-items: center;
   width: 115px;
   height: 15px;
+  left: 20px;
+  top: 2px;
 }
 
 .cart-link::before {
@@ -159,7 +163,7 @@ a {
 
 .features-slider {
   background-color: #eeeeee;
-  padding-top: 18px;
+  padding-top: 8px;
   position: relative;
 }
 
@@ -186,7 +190,7 @@ a {
 .slide-one {
   background-image: url(../img/slide1.png);
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: 97.8% top;
 }
 
 .slide-two {
@@ -208,8 +212,8 @@ a {
   font-stretch: normal;
   font-style: normal;
   margin: 0;
-  margin-bottom: 28px;
-  margin-top: 50px;
+  margin-bottom: 26px;
+  margin-top: 60px;
 }
 
 .slider-item-desc {
@@ -232,7 +236,7 @@ a {
   padding: 0;
   display: flex;
   position: absolute;
-  left: 50%;
+  left: 50.4%;
   bottom: 96px;
   transform: translateX(-50%);
 }
@@ -272,7 +276,7 @@ a {
 /**SERVICES**/
 
 .services {
-  padding-top: 70px;
+  padding-top: 80px;
   padding-bottom: 80px;
   position: relative;
 }
@@ -280,7 +284,7 @@ a {
 .services::before {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: -3px;
   left: 50%;
   transform: translateX(-50%);
   width: 1160px;
@@ -288,10 +292,15 @@ a {
   background-color: #eeeeee;
 }
 
-.services-list {
-  list-style: none;
+.services-wrapper {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.services-list {
+  list-style: none;
+  max-width: 1100px;
+  margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -307,8 +316,8 @@ a {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 19px;
-  margin-bottom: 15px;
+  margin-top: 18px;
+  margin-bottom: 16px;
 }
 
 .service-item p {
@@ -321,7 +330,7 @@ a {
   width: 160px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-top: 32px;
+  margin-top: 33px;
 }
 
 
@@ -329,7 +338,7 @@ a {
 
 
 .about {
-  padding-bottom: 54px;
+  padding-bottom: 59px;
   position: relative;
 }
 
@@ -360,7 +369,7 @@ a {
 
 .about-title {
   margin-top: 55px;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -368,7 +377,7 @@ a {
 
 .about-desc {
   color: #283136;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .about-info {
@@ -405,8 +414,8 @@ a {
 
 .about-illustration {
   width: 360px;
-  padding-top: 22px;
-  padding-left: 22px;
+  padding-top: 32px;
+  padding-left: 20px;
   box-sizing: border-box;
 }
 
@@ -414,8 +423,8 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 42px;
+  margin-top: 28px;
+  margin-bottom: 32px;
   position: relative;
   left: 10px;
 }
@@ -457,6 +466,7 @@ a {
   line-height: 18px;
   color: #283136;
   margin-top: 20px;
+  margin-left: 2px;
 }
 
 
@@ -465,7 +475,7 @@ a {
 
 .partners {
   position: relative;
-  height: 182px;
+  height: 184px;
 }
 
 .partners::before {
@@ -482,7 +492,7 @@ a {
 .partners-list {
   list-style: none;
   max-width: 1140px;
-  height: 182px;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -529,6 +539,45 @@ a {
   opacity: 0.1;
 }
 
+.partner-item:first-child a {
+  height: 68px;
+  position: relative;
+  top: 6px;
+}
+
+.partner-item:nth-child(2) a {
+  height: 90px;
+  position: relative;
+  right: 8px;
+}
+
+.partner-item:nth-child(3) {
+  height: 52px;
+  position: relative;
+  right: 8px;
+  top: 4px;
+}
+
+.partner-item:last-child {
+  height: 84px;
+  position: relative;
+  top: 6px;
+  left: 8px;
+}
+
+.partner-item:first-child::before {
+  right: -52px;
+}
+
+.partner-item:nth-child(2)::before {
+  right: -39px;
+}
+
+.partner-item:nth-child(3)::before {
+  right: -57px;
+  top: 47%;
+}
+
 /**CONTACTS**/
 
 
@@ -570,8 +619,8 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 10px;
-  margin-bottom: 24px;
+  margin-top: 0px;
+  margin-bottom: 22px;
 }
 
 .contacts-address,
@@ -583,7 +632,12 @@ a {
 }
 
 .contacts-address {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  margin-left: 2px;
+}
+
+.contacts-phone {
+  margin-left: 2px;
 }
 
 
@@ -591,7 +645,7 @@ a {
   width: 219px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-top: 37px;
+  margin-top: 40px;
 }
 
 
@@ -814,7 +868,7 @@ a {
 /**CATALOG**/
 
 .catalog-wrapper {
-  max-width: 1140px;
+  max-width: 1160px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -834,6 +888,10 @@ a {
   font-weight: 500;
   margin: 0;
   text-align: center;
+}
+
+.filter {
+  padding-left: 8px;
 }
 
 .filters h3 {
@@ -906,11 +964,11 @@ a {
 }
 
 .range-toggle-min {
-  left: 10px;
+  left: 18px;
 }
 
 .range-toggle-max {
-  left: 162px;
+  left: 160px;
 }
 
 .price-controls {
@@ -928,7 +986,7 @@ a {
 }
 
 .price-controls input[type="text"] {
-  width: 80px;
+  width: 82px;
   height: 38px;
   background-color: #eeeeee;
   border: none;
@@ -957,12 +1015,12 @@ a {
 
 .filter-grid h3 {
   margin-top: 54px;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .filter-grid input[type="radio"]+label {
   position: relative;
-  margin-left: 15px;
+  margin-left: 19px;
   cursor: pointer;
 }
 
@@ -995,12 +1053,12 @@ a {
 
 .filter-features h3 {
   margin-top: 30px;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 }
 
 .filter-features input[type="checkbox"]+label {
   position: relative;
-  margin-left: 15px;
+  margin-left: 18px;
   cursor: pointer;
 }
 
@@ -1035,10 +1093,11 @@ a {
 .filter-button {
   background-color: #eeeeee;
   color: #000000;
-  margin-top: 38px;
+  margin-top: 36px;
   width: 260px;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-left: 2px;
 }
 
 .filter-button:hover,
@@ -1063,7 +1122,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-left: 20px;
 }
 
 .sorting h3 {
@@ -1074,6 +1132,7 @@ a {
   margin: 0;
   margin-bottom: 59px;
   flex-grow: 2;
+  margin-left: 10px;
 }
 
 .sorting-list-one {
@@ -1083,8 +1142,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 305px;
-  margin-right: 30px;
+  width: 282px;
 }
 
 .sorting-list-one button {
@@ -1114,7 +1172,9 @@ a {
   padding: 0;
   margin: 0;
   display: flex;
-
+  justify-content: space-between;
+  width: 30px;
+  margin-left: 43px;
 }
 
 .dir-down {
@@ -1152,6 +1212,7 @@ a {
 
 
 .catalog-list {
+  width: 100%;
   height: 1880px;
   list-style: none;
   margin: 0;
@@ -1160,7 +1221,8 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  margin-top: 40px;
+  margin-top: 36px;
+  margin-left: 10px;
 }
 
 .catalog-item {
@@ -1253,8 +1315,9 @@ a {
   padding: 0;
   margin: 0;
   display: flex;
-  margin-top: 53px;
+  margin-top: 56px;
   margin-bottom: 60px;
+  margin-left: 10px;
 }
 
 .pagination-item {
