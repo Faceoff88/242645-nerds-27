@@ -80,7 +80,7 @@ a {
 }
 
 .main-navigation {
-  max-width: 1140px;
+  max-width: 1160px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -99,7 +99,7 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 6px;
-  padding-right: 22px;
+  padding-right: 44px;
 }
 
 .site-navigation a,
@@ -115,8 +115,7 @@ a {
   align-items: center;
   width: 115px;
   height: 15px;
-  left: 20px;
-  top: 2px;
+  top: 3px;
 }
 
 .cart-link::before {
@@ -171,7 +170,7 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
-  max-width: 1140px;
+  max-width: 1160px;
   height: 413px;
   overflow: hidden;
   margin: 0 auto;
@@ -187,22 +186,22 @@ a {
   transition: ease-in-out 0.5s;
 }
 
-.slide-one {
-  background-image: url(../img/slide1.png);
-  background-repeat: no-repeat;
-  background-position: 97.8% top;
+.slide-one::before {
+  content: url(../img/slide1.png);
+  position: absolute;
+  right: 31px;
 }
 
-.slide-two {
-  background-image: url(../img/slide2.png);
-  background-repeat: no-repeat;
-  background-position: right top;
+.slide-two::before {
+  content: url(../img/slide2.png);
+  position: absolute;
+  right: 31px;
 }
 
-.slide-three {
-  background-image: url(../img/slide3.png);
-  background-repeat: no-repeat;
-  background-position: right top;
+.slide-three::before {
+  content: url(../img/slide3.png);
+  position: absolute;
+  right: 40px;
 }
 
 .slider-item-title {
@@ -236,7 +235,7 @@ a {
   padding: 0;
   display: flex;
   position: absolute;
-  left: 50.4%;
+  left: 50%;
   bottom: 96px;
   transform: translateX(-50%);
 }
@@ -279,6 +278,8 @@ a {
   padding-top: 80px;
   padding-bottom: 80px;
   position: relative;
+  max-width: 1160px;
+  margin: 0 auto;
 }
 
 .services::before {
@@ -293,7 +294,7 @@ a {
 }
 
 .services-wrapper {
-  max-width: 1140px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -345,7 +346,7 @@ a {
 .about::before {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 1160px;
@@ -354,7 +355,7 @@ a {
 }
 
 .about-wrapper {
-  width: 1140px;
+  width: 1160px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -363,7 +364,7 @@ a {
 
 .about-text {
   width: 650px;
-  padding-top: 22px;
+  padding-top: 21px;
   margin-right: 20px;
 }
 
@@ -394,7 +395,7 @@ a {
   color: #283136;
   margin-bottom: 24px;
   position: relative;
-  left: -3px;
+  left: -4px;
 }
 
 .about-info-item:last-child {
@@ -405,7 +406,7 @@ a {
   content: '';
   position: absolute;
   top: 50%;
-  left: -36px;
+  left: -35px;
   transform: translateY(-50%);
   width: 25px;
   height: 2px;
@@ -414,8 +415,7 @@ a {
 
 .about-illustration {
   width: 360px;
-  padding-top: 32px;
-  padding-left: 20px;
+  margin-top: 26px;
   box-sizing: border-box;
 }
 
@@ -423,14 +423,13 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 28px;
+  margin-top: 29px;
   margin-bottom: 32px;
-  position: relative;
-  left: 10px;
 }
 
 .about-illustration-list {
   list-style: none;
+  width: 344px;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -443,7 +442,7 @@ a {
 
 .about-illustration-item p {
   margin: 0;
-  margin-top: 16px;
+  margin-top: 18px;
 }
 
 .about-illustration-item .number,
@@ -476,12 +475,14 @@ a {
 .partners {
   position: relative;
   height: 184px;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .partners::before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 2px;
   left: 50%;
   transform: translateX(-50%);
   width: 1160px;
@@ -491,23 +492,27 @@ a {
 
 .partners-list {
   list-style: none;
-  max-width: 1140px;
   height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
   box-sizing: border-box;
+  padding: 0;
 }
 
 .partner-item {
   position: relative;
-  height: 100%;
-  max-height: 100%;
+  min-width: 300px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
+  align-self: center;
+}
+
+.partner-item:first-child,
+.partner-item:last-child {
+  min-width: 280px;
 }
 
 .partner-item::before {
@@ -516,9 +521,9 @@ a {
   width: 2px;
   background-color: #eeeeee;
   position: absolute;
-  right: -50px;
+  right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(50%, -50%);
 }
 
 .partner-item:last-child::before {
@@ -540,42 +545,27 @@ a {
 }
 
 .partner-item:first-child a {
-  height: 68px;
   position: relative;
-  top: 6px;
+  left: -9px;
+  top: 7px;
 }
 
 .partner-item:nth-child(2) a {
-  height: 90px;
   position: relative;
-  right: 8px;
+  top: 2px;
+  left: 1px;
 }
 
-.partner-item:nth-child(3) {
-  height: 52px;
+.partner-item:nth-child(3) a {
   position: relative;
-  right: 8px;
-  top: 4px;
+  top: 2px;
+  left: 1px;
 }
 
-.partner-item:last-child {
-  height: 84px;
+.partner-item:last-child a {
   position: relative;
-  top: 6px;
-  left: 8px;
-}
-
-.partner-item:first-child::before {
-  right: -52px;
-}
-
-.partner-item:nth-child(2)::before {
-  right: -39px;
-}
-
-.partner-item:nth-child(3)::before {
-  right: -57px;
-  top: 47%;
+  top: 5px;
+  left: 11px;
 }
 
 /**CONTACTS**/
@@ -583,11 +573,11 @@ a {
 
 .contacts {
   position: relative;
-  padding-top: 80px;
+  padding-top: 78px;
 }
 
 .contacts-text-wrapper {
-  width: 1140px;
+  width: 1160px;
   height: 416px;
   position: absolute;
   left: 50%;
@@ -619,8 +609,8 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   margin: 0;
-  margin-top: -2px;
-  margin-bottom: 24px;
+  margin-top: 1px;
+  margin-bottom: 23px;
 }
 
 .contacts-address,
@@ -645,7 +635,7 @@ a {
   width: 219px;
   padding-top: 17px;
   padding-bottom: 15px;
-  margin-top: 36px;
+  margin-top: 37px;
   border-radius: 3px;
 }
 
@@ -654,7 +644,7 @@ a {
 
 
 .main-footer {
-  width: 1140px;
+  width: 1160px;
   height: 217px;
   margin: 0 auto;
   display: flex;
@@ -713,6 +703,7 @@ a {
   display: flex;
   flex-direction: column;
   margin: 0;
+  margin-top: 3px;
 }
 
 .footer-text {
@@ -721,7 +712,7 @@ a {
   font-weight: 400;
   color: #444444;
   margin: 0;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 
@@ -880,9 +871,7 @@ a {
 
 .page-title {
   background-color: #eeeeee;
-  margin-top: 0;
   padding-top: 68px;
-  padding-left: 16px;
   padding-bottom: 110px;
   font-size: 55px;
   line-height: 55px;
@@ -892,7 +881,8 @@ a {
 }
 
 .filter {
-  padding-left: 8px;
+  margin-left: -2px;
+  margin-top: -1px;
 }
 
 .filters h3 {
@@ -919,20 +909,21 @@ a {
 }
 
 .filter-range {
-  width: 261px;
+  width: 260px;
   padding: 0;
   border: none;
 }
 
 .filter-range h3 {
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 48px;
 }
 
 .range-controls {
   position: relative;
   background-color: #eeeeee;
-  height: 81px;
+  height: 80px;
+  left: 0px;
   border-radius: 3px;
 }
 
@@ -1016,12 +1007,12 @@ a {
 
 .filter-grid h3 {
   margin-top: 54px;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 }
 
 .filter-grid input[type="radio"]+label {
   position: relative;
-  margin-left: 19px;
+  margin-left: 20px;
   cursor: pointer;
 }
 
@@ -1054,7 +1045,7 @@ a {
 
 .filter-features h3 {
   margin-top: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .filter-features input[type="checkbox"]+label {
@@ -1133,7 +1124,6 @@ a {
   margin: 0;
   margin-bottom: 59px;
   flex-grow: 2;
-  margin-left: 10px;
 }
 
 .sorting-list-one {
@@ -1174,8 +1164,9 @@ a {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  width: 30px;
+  min-width: 40px;
   margin-left: 43px;
+
 }
 
 .dir-down {
@@ -1223,7 +1214,6 @@ a {
   justify-content: space-between;
   align-content: space-between;
   margin-top: 36px;
-  margin-left: 10px;
 }
 
 .catalog-item {
@@ -1318,7 +1308,6 @@ a {
   display: flex;
   margin-top: 56px;
   margin-bottom: 60px;
-  margin-left: 10px;
 }
 
 .pagination-item {
