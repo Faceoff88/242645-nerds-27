@@ -24,7 +24,7 @@
     </header>
     <main class="container inner-page">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
-      <section class="catalog-wrapper">
+      <div class="catalog-wrapper">
         <section class="filters">
           <h2 class="visually-hidden">Фильтр шаблонов</h2>
           <form class="filter" action="https://echo.htmlacademy.ru" method="post">
@@ -38,8 +38,8 @@
                 <div class="range-toggle range-toggle-max"></div>
               </div>
               <div class="price-controls">
-                <label for="min-price">От<input type="text" name="min-price" value="0"></label>
-                <label for="max-price">До<input type="text" name="max-price" value="15 000"></label>
+                <label for="min-price">От<input type="text" name="min-price" id="min-price" value="0"></label>
+                <label for="max-price">До<input type="text" name="max-price" id="max-price" value="15 000"></label>
               </div>
             </fieldset>
             <fieldset class="filter-grid">
@@ -175,7 +175,7 @@
             <li class="pagination-item"><button name="next" type="button">Следующая</button></li>
           </ul>
         </section>
-      </section>
+      </div>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts-text-wrapper">
@@ -211,22 +211,22 @@
       <ul class="feedback-list">
         <li class="feedback-item">
           <label for="name">Ваше имя:</label>
-          <input type="text" name="name" value="" placeholder="Имя Фамилия">
+          <input type="text" name="name" id="name" value="" placeholder="Имя Фамилия">
         </li>
         <li class="feedback-item">
           <label for="email">Ваш e-mail:</label>
-          <input type="email" name="email" value="" placeholder="email@example.com">
+          <input type="email" name="email" id="email" value="" placeholder="email@example.com">
         </li>
         <li class="feedback-item">
           <label for="text">Текст письма:</label>
-          <textarea name="text" required rows="5" placeholder="В свободной форме"></textarea>
+          <textarea name="text" id="text" required rows="5" placeholder="В свободной форме"></textarea>
         </li>
       </ul>
       <button class="button feedback-button" type="submit">Отправить</button>
       <button class="feedback-close" type="button"></button>
     </form>
   </section>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=6a36dbd7-5c91-4a91-bf6f-957ee9877949" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=6a36dbd7-5c91-4a91-bf6f-957ee9877949"></script>
     <script src="js/yamap-custom.js"></script>
     <script src="js/common.js"></script>
   </body>

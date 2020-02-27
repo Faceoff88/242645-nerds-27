@@ -219,7 +219,7 @@ a {
 .slider-item-desc {
   color: #283136;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .button-more {
@@ -328,9 +328,9 @@ a {
 
 .service-button {
   width: 160px;
-  padding-top: 15px;
+  padding-top: 17px;
   padding-bottom: 15px;
-  margin-top: 33px;
+  margin-top: 32px;
 }
 
 
@@ -383,7 +383,7 @@ a {
 .about-info {
   text-transform: uppercase;
   font-size: 16px;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .about-info-list {
@@ -619,8 +619,8 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 0px;
-  margin-bottom: 22px;
+  margin-top: -2px;
+  margin-bottom: 24px;
 }
 
 .contacts-address,
@@ -643,9 +643,10 @@ a {
 
 .contacts-button {
   width: 219px;
-  padding-top: 15px;
+  padding-top: 17px;
   padding-bottom: 15px;
-  margin-top: 40px;
+  margin-top: 36px;
+  border-radius: 3px;
 }
 
 
