@@ -2,12 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="catalog-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a href="/index.html" class="main-header-logo">
@@ -97,8 +98,8 @@
               <li class="sorting-item"><button type="button">По названию</button></li>
             </ul>
             <ul class="sorting-list-two">
-              <li class="sorting-item"><button class="dir-down dir-is-active" type="button" value="По убыванию"></button></li> <!-- Иконка dir down -->
-              <li class="sorting-item"><button class="dir-up" type="button" value="По возрастанию"></button></li> <!-- Иконка dir up -->
+              <li class="sorting-item"><a class="dir-down dir-is-active" type="button" value="По убыванию"></a></li> <!-- Иконка dir down -->
+              <li class="sorting-item"><a class="dir-up" type="button" value="По возрастанию"></a></li> <!-- Иконка dir up -->
             </ul>
           </div>
           <ul class="catalog-list">
@@ -106,7 +107,7 @@
               <div class="item-text">
                 <h3 class="item-title"><a href="#">Sedona</a></h3>
                 <p class="item-desc">
-                  Информационный сайт<br>
+                  Информационный сайт
                   для туристов
                 </p>
                 <a class="button item-price-button" href="#">9 900 руб.</a>
@@ -117,7 +118,7 @@
               <div class="item-text">
                 <h3 class="item-title"><a href="#">Pink App</a></h3>
                 <p class="item-desc">
-                  Продуктовый лендинг<br>
+                  Продуктовый лендинг
                   приложения для iOS и Android</p>
                 <a class="button item-price-button" href="#">9 900 руб.</a>
               </div>
@@ -127,7 +128,7 @@
               <div class="item-text">
                 <h3 class="item-title"><a href="#">Barbershop</a></h3>
                 <p class="item-desc">
-                  Сайт салона красоты.<br>
+                  Сайт салона красоты.
                   Для мужчин, да.
                 </p>
                 <a class="button item-price-button" href="#">9 900 руб.</a>
@@ -138,7 +139,7 @@
               <div class="item-text">
                 <h3 class="item-title"><a href="#">Mishka</a></h3>
                 <p class="item-desc">
-                  Интернет-магазин<br>
+                  Интернет-магазин
                   вязанных игрушек
                 </p>
                 <a class="button item-price-button" href="#">9 900 руб.</a>
@@ -149,7 +150,7 @@
               <div class="item-text">
                 <h3 class="item-title"><a href="#">A plus</a></h3>
                 <p class="item-desc">
-                  Лендинг курсов повышения<br>
+                  Лендинг курсов повышения
                   квалификации
                 </p>
                 <a class="button item-price-button" href="#">9 900 руб.</a>
@@ -160,13 +161,14 @@
               <div class="item-text">
                 <h3 class="item-title"><a href="#">Кваст</a></h3>
                 <p class="item-desc">
-                  Промо-сайт производителя<br>
+                  Промо-сайт производителя
                   крафтового кваса
                 </p>
                 <a class="button item-price-button" href="#">9 900 руб.</a>
               </div>
               <img src="img/img-kvast-jpg.jpg" width="360" height="576"  alt="Превью шаблона «Kvast»">
             </li>
+            
           </ul>
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-current"><button type="button">1</button></li>
@@ -182,23 +184,25 @@
           <div class="contacts-text">
             <h3 class="contacts-title">Nёrds design studio</h3>
             <p class="contacts-address">
-              191186, Санкт-Петербург,<br>
+              191186, Санкт-Петербург,
               ул. Б. Конюшенная, д. 19/8
             </p>
             <p class="contacts-phone">
               тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
             </p>
-            <button class="button contacts-button" type="button">Напишите нам</button>
+            <a href="./write-us.html" class="button contacts-button">Напишите нам</a>
           </div>
         </div>
         <div class="contacts-map" id="map" style="width: 100%; height: 416px;"></div>
+        <img src="./img/map.jpg" alt="Дизайн-студия NЁRDS расположена по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
+        width="1440" height="416">
       </section>
     </main>
     <footer class="main-footer">
       <ul class="social-icons-list">
-        <li class="social-icon-item"><a href="#"><img src="img/vk-icon.svg" width="21" height="21" alt="Вконтакте"></a></li>
-        <li class="social-icon-item"><a href="#"><img src="img/fb-icon.svg" width="21" height="21" alt="Фейсбук"></a></li>
-        <li class="social-icon-item"><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
+        <li class="social-icon-item"><a class="vk-link" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li class="social-icon-item"><a class="fb-link" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li class="social-icon-item"><a class="inst-link" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
       </ul>
       <div class="main-footer-text">
         <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
@@ -211,18 +215,18 @@
       <ul class="feedback-list">
         <li class="feedback-item">
           <label for="name">Ваше имя:</label>
-          <input type="text" name="name" id="name" value="" placeholder="Имя Фамилия">
+          <input type="text" name="name" value="" placeholder="Имя Фамилия">
         </li>
         <li class="feedback-item">
           <label for="email">Ваш e-mail:</label>
-          <input type="email" name="email" id="email" value="" placeholder="email@example.com">
+          <input type="email" name="email" value="" placeholder="email@example.com">
         </li>
         <li class="feedback-item">
           <label for="text">Текст письма:</label>
-          <textarea name="text" id="text" required rows="5" placeholder="В свободной форме"></textarea>
+          <textarea name="text" rows="5" placeholder="В свободной форме"></textarea>
         </li>
       </ul>
-      <button class="button feedback-button" type="submit">Отправить</button>
+      <button class="button feedback-button" id="feedbackSend" type="submit">Отправить</button>
       <button class="feedback-close" type="button"></button>
     </form>
   </section>
