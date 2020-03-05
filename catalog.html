@@ -2,11 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="catalog-page">
     <header class="main-header">
@@ -93,13 +92,13 @@
           <div class="sorting">
             <h3>Сортировать:</h3>
             <ul class="sorting-list-one">
-              <li class="sorting-item"><button class="is-active-sort-button" type="button">По цене</button></li>
-              <li class="sorting-item"><button type="button">По типу</button></li>
-              <li class="sorting-item"><button type="button">По названию</button></li>
+              <li class="sorting-item"><a class="is-active-sort-button">По цене</a></li>
+              <li class="sorting-item"><a href="#">По типу</a></li>
+              <li class="sorting-item"><a href="#">По названию</a></li>
             </ul>
             <ul class="sorting-list-two">
-              <li class="sorting-item"><a class="dir-down dir-is-active" type="button" value="По убыванию"></a></li> <!-- Иконка dir down -->
-              <li class="sorting-item"><a class="dir-up" type="button" value="По возрастанию"></a></li> <!-- Иконка dir up -->
+              <li class="sorting-item"><a class="dir-down dir-is-active"></a></li> <!-- Иконка dir down -->
+              <li class="sorting-item"><a class="dir-up"></a></li> <!-- Иконка dir up -->
             </ul>
           </div>
           <ul class="catalog-list">
@@ -171,10 +170,10 @@
             
           </ul>
           <ul class="pagination-list">
-            <li class="pagination-item pagination-item-current"><button type="button">1</button></li>
-            <li class="pagination-item"><button type="button">2</button></li>
-            <li class="pagination-item"><button type="button">3</button></li>
-            <li class="pagination-item"><button name="next" type="button">Следующая</button></li>
+            <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#" class="next">Следующая</a></li>
           </ul>
         </section>
       </div>
@@ -231,7 +230,7 @@
     </form>
   </section>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=6a36dbd7-5c91-4a91-bf6f-957ee9877949"></script>
-    <script src="js/yamap-custom.js"></script>
-    <script src="js/common.js"></script>
+    <script src="js/yamap-custom.min.js"></script>
+    <script src="js/common.min.js"></script>
   </body>
 </html>

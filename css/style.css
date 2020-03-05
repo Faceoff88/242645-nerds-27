@@ -374,6 +374,7 @@ a {
 }
 
 .service-button {
+  display: block;
   width: 160px;
   padding-top: 17px;
   padding-bottom: 15px;
@@ -1357,21 +1358,23 @@ a {
   width: 282px;
 }
 
-.sorting-list-one button {
+.sorting-list-one a {
   background-color: transparent;
   border: none;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   opacity: 0.3;
+  color: #000000;
   cursor: pointer;
 }
 
-.sorting-list-one button:hover {
+.sorting-list-one a:hover,
+.sorting-list-one a:focus {
   opacity: 0.6;
 }
 
-.sorting-list-one button:active {
+.sorting-list-one a:active {
   opacity: 1;
 }
 
@@ -1567,7 +1570,11 @@ a {
   margin-right: 0;
 }
 
-.pagination-item button {
+.pagination-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
   width: 50px;
   height: 50px;
   background-color: #eeeeee;
@@ -1576,19 +1583,20 @@ a {
   font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
-.pagination-item button[name="next"] {
+.pagination-item a.next {
   width: 260px;
 }
 
-.pagination-item button:hover,
-.pagination-item button:focus {
+.pagination-item a:hover,
+.pagination-item a:focus {
   background-color: #dfdfdf;
   border-color: #dfdfdf;
 }
 
-.pagination-item button:active {
+.pagination-item a:active {
   width: 50px;
   height: 50px;
   border: none;
@@ -1597,11 +1605,11 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.pagination-item button[name="next"]:active {
+.pagination-item a.next:active {
   width: 260px;
 }
 
-.pagination-item-current button {
+.pagination-item-current a {
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
 }
