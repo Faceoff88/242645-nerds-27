@@ -480,17 +480,23 @@ a {
 
 .about-illustration-list {
   list-style: none;
-  width: 344px;
+  width: 365px;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 .about-illustration-item {
   width: 105px;
+  margin-right: 14px;
+}
+
+.about-illustration-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .about-illustration-item p {
