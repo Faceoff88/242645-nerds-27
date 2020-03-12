@@ -51,4 +51,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     setTimeout(del, 1000);
   });
+
+  var inp = document.querySelectorAll(".input-field");
+
+  for (let i = 0; i < inp.length; i++) {
+    const elem = inp[i];
+    elem.addEventListener("focus", function() {
+      elem.classList.remove("invalid");
+    });
+  }
 });
